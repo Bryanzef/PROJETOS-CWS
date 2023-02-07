@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* all variations - NO ITALIC */
+
+:root {
+   --color-bg: #d8ebfd;
+   --color-button: #3B82F6;
+   --color-logo: #3B82F6;
+   --color-strong: #41a3ff;
+
+   --font-padrao: 'Poppins', sans-serif;
+
+   font-size: 16px;
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+   width: 100%;
+   min-height: 100vh;
+   height: auto;
+   padding: 10px;
+   font-family: var(--font-padrao);
+   background-color: var(--color-bg);
+}
+
+header {
+   position: fixed;
+   top: 20px;
+   z-index: 3;
+   width: 98%;
+   height: 80px;
+   padding: 0 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: white;
+   border-radius: 100px;
+}
+header > div.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+header > div.logo > i {
+   font-size: 2rem;
+   color: var(--color-logo);
+}
+header > nav {
+   
+}
+header > nav > ul {
+   list-style: none;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1.4rem;
+}
+header > nav > ul > li,a {
+   font-size: 1rem;
+   text-decoration: none;
+   color: black;
+   cursor: pointer;
+   transition: all .3s;
+}
+header > nav > ul > li:hover,a:hover {
+   color: var(--color-logo);
+   transform: scale(105%);
+   transition: all .3s;
+}
+header > div.buttons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+main {
+   width: 80%;
+   min-width: 300px;
+   max-width: 1300px;
+   height: 600px;
+   margin: 120px auto 0 auto;
+   padding: 40px;
+   border-radius: 20px;
+   background-image: url(../images/montain.jpg);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+main > h1 {
+   line-height: 3.5rem;
+   font-size: 3rem;
+   color: white;
+}
+main > h1 > strong {
+   color: var(--color-strong);
+}
+main > form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+main > form > input {
+   padding: 10px 15px;
+   border-radius: 20px;
+   border: none;
+}
+main > form > button {
+   padding: 10px 15px;
+   border-radius: 20px;
+   border: none;
+}
+
+footer {
+   margin-top: 20px;
+   width: 100%;
+   text-align: center;
+   padding: 10px;
+}
+
+
+/* ! Media queries HEIGHT */
+@media (min-height: 800px) {
+   footer {
+      position: absolute;
+      bottom: 10px;
+   }
+}
+@media (min-height: 875px) {
+   footer {
+      margin-top: 75px;
+      position: static;
+   }
+}
+
+
+i.fa-bars, i.fa-xmark {
+   font-size: 1.6rem;
+   cursor: pointer;
+   display: none;
+}
+
+div.menu {
+   width: 70%;
+   min-width: 200px;
+   max-width: 400px;
+   max-height: 100vh;
+   min-height: 100vh;
+   padding: 50px 0 0 0;
+   border-radius: 30px;
+   background-color: black;
+   position: fixed;
+   top: 100px;
+   right: 0;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   transition: all .3s;
+}
+div.menu > ul {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 25px;
+}
+div.menu > ul > button.login {
+   margin-top: 30px;
+   color: white;
+   border: 1px solid white;
+}
+
+div.menu.deactivate {
+   position: fixed;
+   top: 100px;
+   right: -1000px;
+   transition: all .3s;
+}
+/* ! Media queries */
+@media (max-width: 800px) {
+   i.fa-bars {
+      display: inline;
+   }
+   header > nav, header > div.buttons {
+      display: none;
+   }
+   div.menu > ul > li,a {
+      font-size: 1.3rem;
+      color: white;
+      text-decoration: none;
+   }
+   div.menu > ul > button {
+      font-size: 1.1rem;
+   }
+}
+
+@media (max-width: 556px) {
+   main > h1 {
+      font-size: 2.5rem;
+   }
+   main > form {
+      flex-direction: column;
+   }
+   main > form > input, main > form > button {
+      width: 200px;
+   }
+}
+
+@media (max-width: 335px) {
+   main {
+      min-width: 275px;
+   }
+   main > h1 {
+      font-size: 2.2em;
+      line-height: 3rem;
+   }
+}

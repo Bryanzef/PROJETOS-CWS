@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+/* 100 [...] 900 ; NO ITALIC */
+
+:root {
+   --cor01: #079DD9;
+   --cor02: #04B2D9;
+   --cor03: #BAD94A;
+   --cor04: #A7BF4E;
+   --cor05: #232426;
+
+   --font-padrao: 'Montserrat', sans-serif;
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+html{
+   Scroll-behavior:smooth;
+}
+
+body {
+   width: 100%;
+   min-width: 100vh;
+   font-family: var(--font-padrao);
+}
+
+section.home {
+   width: 100%;
+   min-height: 100vh;
+   background-image: url(../images/bg-home\ -\ Editado_Easy-Resize.com.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 100px;
+   border-width: 10px;
+   border-style: solid;
+   border-image: linear-gradient(
+      to right, 
+      var(--cor03),
+      var(--cor02)
+   ) 1;
+   border-bottom: none;
+}
+section.home > header {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+section.home > header > div.image-logo {
+   width: 200px;
+   height: 200px;
+   padding: 20px 20px 40px 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+section.home > header > div.image-logo > img {
+   width: 100%;
+}
+section.home > nav {
+   width: 100%;
+   height: auto;
+}
+section.home > header > nav > ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+section.home > header > nav > ul > li,a {
+   color: white;
+   text-decoration: none;
+   cursor: pointer;
+   transition: .3s;
+}
+section.home > header > nav > ul > li:hover, li:hover > a {
+   transform: scale(110%);
+   color: var(--cor02);
+}
+section.home > div.faca-parte {
+   width: 100%;
+   height: 200px;
+   padding: 10px;
+   text-align: center;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+section.home > div.faca-parte > h1 {
+   margin-bottom: 75px;
+   font-size: 3rem;
+   text-transform: uppercase;
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.64);
+   line-height: 1.2em;
+}
+section.home > div.faca-parte > h1 > strong {
+   font-size: 3.7rem;
+   color: var(--cor03);
+   letter-spacing: 0.3rem;
+}
+section.home > div.faca-parte i {
+   font-size: 2.5rem;
+   cursor: pointer;
+   color: var(--cor03);
+   transition: .5s;
+}
+section.home > div.faca-parte i:hover {
+   transform: scale(120%);
+   color: var(--cor02);
+}
+
+
+section.venha-conhecer {
+   width: 100%;
+   min-height: 100vh;
+   background-color: var(--cor05);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 30px;
+}
+section.venha-conhecer > div.subtitle {
+   padding: 10px;
+   margin-top: 50px;
+   position: relative;
+}
+section.venha-conhecer > div.subtitle > h2 {
+   font-size: 2.5rem;
+   color: white;
+   padding: 0px 5px 10px 5px;
+}
+section.venha-conhecer > div.subtitle > h2 > strong {
+   color: var(--cor01);
+}
+section.venha-conhecer > div.subtitle > hr {
+   width: 80%;
+   border-style: solid;
+   border-width: 1px;
+   border-color: rgb(69, 67, 67);
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 80%;
+}
+section.venha-conhecer > div.subtitle > hr.strong {
+   width: 20%;
+   border-color: var(--cor04);
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+section.venha-conhecer > div.paragrafo {
+   width: 40%;
+   text-align: center;
+   color: white;
+}
+section.venha-conhecer > div.paragrafo > p > strong {
+   color: var(--cor01);
+}
+section.venha-conhecer > div.images {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+section.venha-conhecer > div.images > div.first-line-images {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0px;
+}
+section.venha-conhecer > div.images > div.first-line-images > i {
+   color: white;
+   font-size: 2rem;
+   cursor: pointer;
+   transition: .3s;
+}
+section.venha-conhecer > div.images > div.first-line-images > i:hover {
+   transform: scale(115%);
+   color: var(--cor01);
+}
+section.venha-conhecer > div.images > div.first-line-images > div {
+   width: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+section.venha-conhecer > div.images > div.first-line-images > div > img {
+   width: 60%;
+   height: 100%;
+   border-radius: 10px;
+   transition: .3s;
+   opacity: 50%;
+}
+section.venha-conhecer > div.images > div.first-line-images > div > img:hover {
+   transform: scale(105%);
+   opacity: 100%;
+}
+/* Manipulação com JS */
+section.venha-conhecer > div.images > div.first-line-images > div > img.hidden {
+   display: none;
+}
+
+section.venha-conhecer > div.images > div.last-line-images {
+   width: 40%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+section.venha-conhecer > div.images > div.last-line-images > img {
+   width: 33.3%;
+   cursor: pointer;
+   border-radius: 5px;
+}
+section.venha-conhecer > div.images > div.last-line-images > img:hover {
+   transform: scale(103%);
+   transition: .4s;
+}
+section.venha-conhecer > div.images > div.last-line-images > img[alt="aula experimental"] {
+   border: 1px solid var(--cor02);
+}
+section.venha-conhecer > div.instagram {
+   margin-top: 20px;
+   color: white;
+   text-transform: uppercase;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+section.venha-conhecer > div.instagram > p > strong {
+   color: var(--cor02);
+}
+section.venha-conhecer > div.instagram > img {
+   width: 200px;
+}
+section.venha-conhecer > div.instagram > div.images-instagram {
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+   flex-wrap: wrap;
+}
+
+/* Seção Nathan */
+.contatos {
+   text-align: center; /* centraliza os elementos */
+   padding: 10px;
+}
+.contatos ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+.contatos .social-icons {
+   color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 12px;
+   cursor: pointer;
+}
+.contatos .social-icons i:hover {
+   transform: scale(110%);
+   color: var(--cor05);
+}
+.contatos li {
+   margin: 20px;
+   display: inline-block;
+   font-family: "Montserrat", sans-serif;
+}
+
+/* temp */
+img {
+   width: 200px;
+}
