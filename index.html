@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@300&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>
+        Transforme sua carreira com o nosso Curso de
+        <span> Marketing Digital </span> Completo
+      </h1>
+      <p>
+        O mercado digital está em constante evolução e é fundamental estar
+        atualizado para alcançar sucesso na sua carreira. Nós te apresentamos o
+        nosso Curso de Marketing Digital Completo, que te ensinará todas as
+        estratégias e técnicas necessárias para se destacar neste mercado. Você
+        aprenderá sobre SEO, mídias sociais, publicidade online, e-mail
+        marketing e muito mais.
+      </p>
+
+          <img
+            src="https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="active"
+          />
+      
+       
+      </div>
+    </div>
+    <a href="#form" class="cta">
+      Transforme sua <span id="spanYellow"> carreira </span>agora, se inscreva
+      no nosso curso!
+    </a>
+    <div class="form" id="form">
+      <h2>Inscreva-se agora e comece sua transformação</h2>
+      <form>
+        <input type="text" placeholder="Nome completo" required />
+        <p>
+        <input type="email" placeholder="Endereço de e-mail" required />
+      </p>
+        <input type="submit" value="Inscreva-se agora" />
+      </form>
+    </div>
+    <div class="contact">
+      <p>
+        Tem alguma dúvida? Entre em contato conosco:<a
+          href="mailto:contato@cursodemarketingdigital.com"
+          >contato@cursodemarketingdigital.com</a
+        >
+      </p>
+    </div>
+    <script>
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert(
+          "Obrigado por se inscrever no nosso curso! Em breve entraremos em contato"
+        );
+      });
+    </script>
+  </body>
+</html>
