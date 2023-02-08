@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #ffffff;
+
+  background: #200122; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6f0000,
+    #200122
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6f0000,
+    #200122
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*  ESTLIZAÇÃO DOS CARDS*/
+.Planos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+span {
+  margin-top: 40px;
+  align-items: center;
+  text-align: center;
+  margin: 20px 2px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+span:first-child {
+  background: #5f5f5f;
+  border-radius: 4px;
+  width: 100px;
+}
+span:last-child {
+  background: #313030;
+  border-radius: 4px;
+  width: 100px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.card {
+  margin: 20px;
+  width: 244px;
+  height: 400px;
+  background: #171515;
+  box-shadow: 5px 5px 20px #000000;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headerText {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: white;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.headerText:hover {
+  cursor: pointer;
+}
+
+.Text {
+  width: 180px;
+  height: 32px;
+  border-radius: 12px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #ffffff;
+  animation: float 5s ease-in-out infinite;
+  text-transform: uppercase;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.Text:hover {
+  cursor: pointer;
+}
+#Card1 {
+  background: rgba(255, 67, 67, 0.74);
+  border-radius: 12px;
+}
+#CardBlue {
+  background: rgba(67, 74, 255, 0.74);
+  border-radius: 12px;
+}
+#CardOrange {
+  background: rgba(247, 116, 42, 0.75);
+  border-radius: 12px;
+}
+#Card {
+  background: rgba(190, 190, 190, 0.34);
+  border-radius: 12px;
+}
+/*  ESTILIZAÇÃO TEXTO DE VALORES (FOOTER DO CARD) */
+.priceText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+.priceText > p {
+  margin: 2.5px;
+}
+.priceText > p:nth-child(1) {
+  padding-top: 8px;
+  border-radius: 0px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 7px;
+
+  color: #ffffff;
+  margin-right: 4px;
+  text-decoration: line-through;
+}
+.priceText > p:nth-child(2) {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 10px;
+
+  color: #ff0000;
+}
+h2 {
+  margin-top: 19px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 29px;
+
+  color: #ff0000;
+}
+.priceText > p:last-child {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 10px;
+  color: #ff0000;
+  margin-top: 28px;
+  margin-left: 4px;
+}
